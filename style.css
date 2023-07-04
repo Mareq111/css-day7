@@ -54,10 +54,18 @@ body {
   font-weight: 500;
   color: var(--b-50);
 }
-/* hamburger menu for notification bar  */
+/* ala hamburger menu for notification bar  */
 
 .hamburger-menu {
   margin-left: 20px;
+  cursor: pointer;
+  transition: 3s ease-in-out;
+}
+/* hover for ala hamburger menu */
+.hamburger-menu:hover #rectangle-top,
+.hamburger-menu:hover #circle-menu-top,
+.hamburger-menu:hover #rectangle-bottom {
+  background-color: var(--b-50);
 }
 .top-rectangle-with-circle {
   display: flex;
@@ -88,6 +96,7 @@ body {
   margin-top: 5px;
   border-radius: 5px 5px;
 }
+
 /* search glass */
 
 .search {
@@ -95,6 +104,8 @@ body {
   justify-content: center;
   align-items: center;
   margin-right: 20px;
+  cursor: pointer;
+  transition: 3s ease-in-out;
 }
 #search-circle {
   height: 15px;
@@ -108,6 +119,13 @@ body {
   background-color: var(--b-200);
   border-radius: 0 5px 5px 0;
   transform: translateX(-20%) translateY(135%) rotate(25deg);
+}
+.search:hover #search-circle {
+  border-color: var(--b-50);
+}
+
+.search:hover #search-rectangle {
+  background-color: var(--b-50);
 }
 
 /* posts area */
@@ -157,7 +175,6 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 14px;
-  color: var(--b-700);
   margin-right: 35px;
   margin-top: 50px;
   margin-left: 10px;
@@ -165,11 +182,28 @@ body {
 
 .p-post {
   margin: 3px;
+  cursor: pointer;
+}
+/* first post  */
+#first-post {
+  color: var(--b-700);
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 #second-post {
+  color: var(--b-700);
   margin-top: 6px;
 }
 #third-post {
+  color: var(--b-700);
   margin-top: 6px;
 }
+/* hovers to alls posts */
+#first-post:hover,
+#second-post:hover,
+#third-post:hover {
+  color: var(--b-300);
+}
+
+/* hidden side box menu */

@@ -1,0 +1,135 @@
+/* font family from google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* colors variety */
+
+:root {
+  ---sea-green-700: #356169;
+  --sea-green-500: #438e96;
+  --sea-green-300: #92cace;
+  --sea-green-200: #bfe0e2;
+  --sea-green-50: #f2f9f9;
+}
+
+html {
+  font-family: "Jost", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-color: var(---sea-green-700);
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: #f2eded;
+  border-radius: 5px;
+}
+
+.notification-bar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: var(--sea-green-500);
+  height: 15%;
+  border-radius: 5px 5px 0 0;
+}
+
+/* search icon */
+
+/* .header {
+    font-size: 10px;
+    color: var(--sea-green-50);
+}
+
+.search {
+    color: var(--sea-green-50);
+    justify-content: end;
+    width: 25px;
+    height: 25px;
+}
+
+#magnifying-glass {
+    background-color: var(--sea-green-50);
+} */
+
+
+/* all -posts section */
+
+.posts {
+  display: flex;
+  height: 85%;
+  width: 100%;
+
+}
+
+ /* line-circle-div  */
+
+.line-circle-wall {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 5%;
+  margin-right: 0;
+  margin-left: 25px;
+}
+
+.line {
+  height: 100%;
+  min-height: 48px;
+  width: 4px;
+  background-color: var(--sea-green-300);
+  margin-bottom: 5px;
+}
+#line-4 {
+    margin: 0;
+}
+
+
+.circle {
+  height: 100%;
+  width: 8px;
+  border-radius: 50%;
+  border: 2px solid var(--sea-green-500);
+  background-color: transparent;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+/* posts  */
+
+.all-posts {
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: var(---sea-green-700);
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-left: 10px;
+  
+}
+
+.p-post {
+    margin: 3px;
+}
+
+#second-post {
+    margin-top: 6px;
+}
+#third-post {
+    margin-top: 6px;
+}
+

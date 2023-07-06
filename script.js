@@ -36,3 +36,18 @@ thirdCircle.addEventListener("mouseover", function () {
 thirdCircle.addEventListener("mouseout", function () {
   thirdPost.classList.remove("highlight-3");
 });
+
+//animation for ala hamburger menu
+
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+const box = document.querySelector(".box");
+const sideBarMenu = document.querySelector(".side-box-menu");
+
+hamburgerMenu.addEventListener("click", function () {
+  box.classList.add("box-hover");
+  sideBarMenu.classList.add("side-box-menu-hover");
+});
+box.addEventListener("mouseover", function () {
+  box.classList.remove("box-hover");
+  sideBarMenu.classList.remove("side-box-menu-hover");
+});

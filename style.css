@@ -30,6 +30,51 @@ body {
   height: 400px;
   background-color: var(--b-200);
 }
+/* hidden side box menu */
+.side-box-menu {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-left: 10px;
+  border-radius: 5px 0 0 5px;
+}
+.elements-nav {
+  background-color: var(--b-300);
+  height: 260px;
+  width: 150px;
+}
+.ul-list {
+  padding: 10px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.li-in-side-menu {
+  font-size: 14px;
+  list-style: none;
+  color: var(--b-700);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  cursor: pointer;
+  padding: 12px 0;
+  transition: 0.5s ease;
+}
+
+#li-menu-1:hover,
+#li-menu-2:hover,
+#li-menu-3:hover,
+#li-menu-4:hover,
+#li-menu-5:hover {
+  background-color: var(--b-600);
+  color: var(--b-50);
+}
+
+.fa-solid {
+  margin-right: 10px;
+  margin-left: 15px;
+}
+/* visible box */
 
 .box {
   width: 300px;
@@ -222,5 +267,3 @@ body {
 #third-post:hover {
   color: var(--b-300);
 }
-
-/* hidden side box menu */

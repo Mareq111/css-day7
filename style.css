@@ -156,7 +156,7 @@ body {
 
 /* search glass */
 
-.search {
+.search-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,14 +177,33 @@ body {
   border-radius: 0 5px 5px 0;
   transform: translateX(-20%) translateY(135%) rotate(25deg);
 }
-.search:hover #search-circle {
+.search-icon:hover #search-circle {
   border-color: var(--b-50);
 }
 
-.search:hover #search-rectangle {
+.search-icon:hover #search-rectangle {
   background-color: var(--b-50);
 }
 
+/* search-input for search glass */
+
+.search-input {
+  position: absolute;
+  width: 160px;
+  height: 24px;
+  margin-left: 18px;
+  background-color: var(--b-50);
+  font-family: "Jost", sans-serif;
+  border-radius: 20px 20px 20px 20px;
+  padding-left: 10px;
+  border: 2px solid var(--b-50);
+  outline: none;
+  z-index: -1;
+  transition: 0.5s ease-in;
+}
+.search-input-hover {
+  z-index: 2;
+}
 /* posts area */
 
 .posts {

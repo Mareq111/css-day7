@@ -51,3 +51,16 @@ box.addEventListener("mouseover", function () {
   box.classList.remove("box-hover");
   sideBarMenu.classList.remove("side-box-menu-hover");
 });
+
+// animation for search glass
+
+const searchIcon = document.querySelector(".search-icon");
+const searchInput = document.querySelector(".search-input");
+
+searchIcon.addEventListener("click", function () {
+  searchInput.classList.add("search-input-hover");
+});
+
+searchIcon.addEventListener("mouseover", function () {
+  searchInput.classList.remove("search-input-hover");
+});
